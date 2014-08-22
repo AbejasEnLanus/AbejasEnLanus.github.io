@@ -257,7 +257,7 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
-        font-size: 1.5em;
+        font-size: 2em;
     }
 }
 
@@ -265,7 +265,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(../img/abejas-en-lanus.jpeg);
+    background-image: url(../img/abejas-fondo.jpg);
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -298,7 +298,7 @@ header .intro-text .intro-heading {
 
 @media(min-width:768px) {
     header .intro-text {
-        padding-top: 300px;
+        padding-top: 180px;
         padding-bottom: 200px;
     }
 
@@ -322,6 +322,10 @@ header .intro-text .intro-heading {
 
 section {
     padding: 100px 0;
+}
+
+section#quienes-somos {
+    background: url(../img/DSC08982.JPG) no-repeat;
 }
 
 section h2.section-heading {
@@ -355,6 +359,15 @@ section h3.section-subheading {
 .service-heading {
     margin: 15px 0;
     text-transform: none;
+    background-color: black;
+}
+
+.portfolio-link > h4.service-heading {
+    margin: 0;
+}
+
+.row.text-center > div.col-md-2 {
+    min-height: 150px;
 }
 
 #portfolio .portfolio-item {
@@ -656,6 +669,10 @@ section h3.section-subheading {
 
 aside.clients img {
     margin: 50px auto;
+}
+
+section#quienes-somos {
+    padding-bottom: 0px;
 }
 
 section#contact {
