@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" ng-app="app">
 
 <head>
 
@@ -11,8 +11,13 @@
 
     <title>Abejas en Lanus</title>
 
+    <link rel="shortcut icon" href="/img/AbejasEnLanus.ico" />
+
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="js/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/angular/angular.min.js"></script>
+
+    <script src="js/app.js"></script>
 
     <!-- Custom CSS -->
     <link href="css/agency.css" rel="stylesheet">
@@ -33,7 +38,7 @@
 
 </head>
 
-<body id="page-top" class="index">
+<body ng-controller="MainController" id="page-top" class="index">
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -93,83 +98,88 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-md-2 col-md-offset-4" style="border:1px black solid">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <a href="#abejaSilvestre" class="portfolio-link" data-toggle="modal">
                         <h4 class="service-heading">Abeja Silvestre</h4>
                     </a>
                 </div>
             </div>
             <div class="row text-center">
                 <div class="col-md-2 col-md-offset-2" style="border:1px black solid">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                    <a href="#enjambre" class="portfolio-link" data-toggle="modal">
                         <h4 class="service-heading">Enjambre</h4>
                     </a>
                 </div>
                 <div class="col-md-2" style="border:1px black solid">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                    <a href="#colmenaSilvestre" class="portfolio-link" data-toggle="modal">
                         <h4 class="service-heading">Colmena Silvestre</h4>
                     </a>
                 </div>
                 <div class="col-md-2" style="border:1px black solid">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <a href="#colmenaProductora" class="portfolio-link" data-toggle="modal">
                         <h4 class="service-heading">Colmena Productora</h4>
                     </a>
                 </div>
             </div>
             <div class="row text-center">
                 <div class="col-md-2" style="border:1px black solid">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <a href="#comoSiActuar" class="portfolio-link" data-toggle="modal">
                         <h4 class="service-heading">Cómo SI actuar</h4>
                     </a>
                 </div>
                 <div class="col-md-2" style="border:1px black solid">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <a href="#comoNoActuar" class="portfolio-link" data-toggle="modal">
                         <h4 class="service-heading">Cómo NO actuar</h4>
                     </a>
                 </div>
                 <div class="col-md-2" style="border:1px black solid">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <a href="#maltratos" class="portfolio-link" data-toggle="modal">
                         <h4 class="service-heading">Maltratos</h4>
                     </a>
                 </div>
                 <div class="col-md-2" style="border:1px black solid">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <a href="#insectosRelacionados" class="portfolio-link" data-toggle="modal">
                         <h4 class="service-heading">Insectos Relacionados</h4>
                     </a>
                 </div>
                 <div class="col-md-2" style="border:1px black solid">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <a href="#queProducen" class="portfolio-link" data-toggle="modal">
                         <h4 class="service-heading">Qué producen</h4>
                     </a>
                 </div>
             </div>
             <div class="row text-center">
-                <div class="col-md-2" style="border:1px black solid">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                <div class="col-md-2" style="border:1px black solid;margin-left: -195px;">
+                    <a href="#preguntasFrecuentes" class="portfolio-link" data-toggle="modal">
                         <h4 class="service-heading">Preguntas Frecuentes</h4>
                     </a>
                 </div>
                 <div class="col-md-2" style="border:1px black solid">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <a href="#preguntasFrecuentes" class="portfolio-link" data-toggle="modal">
+                        <h4 class="service-heading">Preguntas Frecuentes</h4>
+                    </a>
+                </div>
+                <div class="col-md-2" style="border:1px black solid">
+                    <a href="#queProducen" class="portfolio-link" data-toggle="modal">
                         <h4 class="service-heading">Qué producen</h4>
                     </a>
                 </div>
                 <div class="col-md-2" style="border:1px black solid">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <a href="#habitantesDeLaColmena" class="portfolio-link" data-toggle="modal">
                         <h4 class="service-heading">Habitantes de la Colmena</h4>
                     </a>
                 </div>
                 <div class="col-md-2" style="border:1px black solid">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <a href="#loQueNoVemosDeUnaAbeja" class="portfolio-link" data-toggle="modal">
                         <h4 class="service-heading">Lo que no vemos de una abeja</h4>
                     </a>
                 </div>
                 <div class="col-md-2" style="border:1px black solid">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <a href="#actividadesDeLosUltimosAños" class="portfolio-link" data-toggle="modal">
                         <h4 class="service-heading">Actividades de los últimos años</h4>
                     </a>
                 </div>
                 <div class="col-md-2" style="border:1px black solid">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <a href="#videosRecomendablesParaConocerSobreLaAbeja" class="portfolio-link" data-toggle="modal">
                         <h4 class="service-heading">Videos Recomendables para conocer sobre la abeja</h4>
                         <!-- El maravilloso mundo de los animales de Disney: Las abejas -->
                     </a>
@@ -179,182 +189,6 @@
         </div>
     </section>
 
-    <!-- Portfolio Grid Section -->
-    <!--section id="casos" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Casos</h2>
-                    <h3 class="section-subheading text-muted">Todos los casos a continuación son ejemplos ocurridos en el territorio de Lanús.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Panal en Colegio</h4>
-                        <p class="text-muted">Padres y Maestros preocupados por la "peligrosidad".</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/startup-framework.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Enjambre en medidor de gas</h4>
-                        <p class="text-muted">Ambientes cálidos y cerrados.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/treehouse.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Panal en departamento</h4>
-                        <p class="text-muted">Ejemplo de correcta remoción.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/golden.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Panal dentro de árbol</h4>
-                        <p class="text-muted">Ejemplo de extracción.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/escape.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Panal frente a la ruta</h4>
-                        <p class="text-muted">Reacción de transeuntes.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Abejas agredidas</h4>
-                        <p class="text-muted">Un ejemplo de reacción.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <!--section id="preguntas-frecuentes">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Preguntas Frecuentes</h2>
-                    <h3 class="section-subheading text-muted">Preguntas y Consultas frecuentes hechas por los vecinos.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="timeline">
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>¿Son Peligrosas u hotiles las Abejas?</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Las abejas, como todo animal de la naturaleza, antepone su supervivencia y se ocupa de esta por sobre todas las cosas, y lo primero que hace es mantener la supervivencia de la colmena mediante las actividades de...</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>¿Hay que intentar retirar o sacar el panal o enjambre de donde lo hemos descubierto?</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">No necesariamente..., Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>¿Es comestible la miel de ciudad?</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>¿Cómo podemos retirar la miel del panal que encontramos cerca de nuestro domicilio?</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <h4>Has
-                                    <br>tú
-                                    <br>Pregunta!</h4>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
     <section id="quienes-somos" class="bg-light-gray">
         <div class="container">
             <div class="row">
@@ -406,7 +240,6 @@
         </div>
     </section>
 
-    <!-- Clients Aside -->
     <aside class="clients">
         <div class="container">
             <div class="row">
@@ -433,7 +266,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Si usted tiene algún inconveniente con abejas, puede comunicarse a Defensa Civil, Bomberos que le podrán dar algún tipo de información.</h2>
+                    <h2 class="section-heading">Si usted tiene algún inconveniente con abejas, puede comunicarse con Defensa Civil o Bomberos, quienes podrán darle información útil.</h2>
                 </div>
             </div>
         </div>
@@ -465,11 +298,7 @@
         </div>
     </footer>
 
-    <!-- Portfolio Modals -->
-    <!-- Use the modals below to showcase details about your portfolio projects! -->
-
-    <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" ng-repeat="album in albums" id="{{album.name | toCamelCase}}" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -481,10 +310,9 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Abejas Silvestres</h2>
-                            <p class="item-intro text-muted">Enjambres de abejas silvestres.</p>
-                            <img class="img-responsive" src="img/portfolio/roundicons-free.png" alt="">
+                            <h2>{{album.name}}</h2>
+                            <p class="item-intro text-muted">{{album.description}}</p>
+                            <img class="img-responsive" ng-repeat="photo in album.photos.data" src="{{photo.images[photo.images.length - 1].source}}" alt="{{}}">
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
@@ -493,156 +321,13 @@
         </div>
     </div>
 
-    <!-- Portfolio Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Heading</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.png" alt="">
-                            <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
-                            <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <script src="js/jquery/dist/jquery.min.js"></script>
+    <script src="js/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <!-- Portfolio Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="">
-                            <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/golden-preview.png" alt="">
-                            <p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and clean one page web template that was made exclusively for Best PSD Freebies. This template has a great portfolio, timeline, and meet your team sections that can be easily modified to fit your needs.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/escape-preview.png" alt="">
-                            <p>Escape is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Escape is a one page web template that was designed with agencies in mind. This template is ideal for those looking for a simple one page solution to describe your business and offer your services.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/escape-one-page-psd-web-template/">FreebiesXpress.com</a>.</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 6 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/dreams-preview.png" alt="">
-                            <p>Dreams is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Dreams is a modern one page web template designed for almost any purpose. It’s a beautiful template that’s designed with the Bootstrap framework in mind.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- jQuery Version 1.11.0 -->
-    <script src="js/jquery-1.11.0.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/cbpAnimatedHeader.js"></script>
 
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
 
 </body>
