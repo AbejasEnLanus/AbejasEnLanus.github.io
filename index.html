@@ -308,11 +308,13 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-lg-12">
                         <div class="modal-body">
                             <h2>{{album.name}}</h2>
                             <p class="item-intro text-muted">{{album.description}}</p>
-                            <img class="img-responsive" ng-repeat="photo in album.photos.data" src="{{photo.images[photo.images.length - 1].source}}" alt="{{}}">
+                            <div class="row">
+                                <img class="img-rounded img-responsive col-md-4" ng-repeat="photo in album.photos.data" src="{{photo.images[photo.images.length - 1].source}}" >
+                            </div>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
