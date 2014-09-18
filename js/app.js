@@ -38,7 +38,7 @@ app.controller('MainController', function($scope, $http) {
                         $scope.portadas['Que producen'] = album.photos.data[0].images[album.photos.data[0].images.length - 1].source;
                     break;
                     case "":
-                        $scope.portadas[''] = album.photos.data[0].images[album.photos.data[0].images.length - 1].source;
+                        $scope.portadas['Otros'] = album.photos.data[0].images[album.photos.data[0].images.length - 1].source;
                     break;
                     case "Preguntas Frecuentes":
                         $scope.portadas['Preguntas Frecuentes'] = album.photos.data[0].images[album.photos.data[0].images.length - 1].source;
