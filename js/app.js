@@ -72,8 +72,8 @@ app.controller('MainController', function($scope, $http) {
                             });
                         }
                     break;
-                    case "Insectos Relacionados":
-                        $scope.portadas['Insectos Relacionados'] = album.photos.data[0].images[album.photos.data[0].images.length - 1].source;
+                    case "Insectos Polinizadores":
+                        $scope.portadas['Insectos Polinizadores'] = album.photos.data[0].images[album.photos.data[0].images.length - 1].source;
                         if (album.photos.paging.next !== 'undefined') {
                             $http.get(album.photos.paging.next)
                             .success(function(data2) {
@@ -81,8 +81,8 @@ app.controller('MainController', function($scope, $http) {
                             });
                         }
                     break;
-                    case "Que producen":
-                        $scope.portadas['Que producen'] = album.photos.data[0].images[album.photos.data[0].images.length - 1].source;
+                    case "Temporada 2014":
+                        $scope.portadas['Temporada 2014'] = album.photos.data[0].images[album.photos.data[0].images.length - 1].source;
                         if (album.photos.paging.next !== 'undefined') {
                             $http.get(album.photos.paging.next)
                             .success(function(data2) {
@@ -144,8 +144,8 @@ app.controller('MainController', function($scope, $http) {
                             });
                         }
                     break;
-                    case "Videos recomendables para conocer sobre la abeja":
-                        $scope.portadas['Videos recomendables para conocer sobre la abeja'] = album.photos.data[0].images[album.photos.data[0].images.length - 1].source;
+                    case "Videos":
+                        $scope.portadas['Videos'] = album.photos.data[0].images[album.photos.data[0].images.length - 1].source;
                         if (album.photos.paging.next !== 'undefined') {
                             $http.get(album.photos.paging.next)
                             .success(function(data2) {
